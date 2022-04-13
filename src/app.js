@@ -17,7 +17,7 @@ app.use(limiter);
 
 app.get("/", (req, res) => {
   res.status(200).json({
-    message: "app_status.status_check",
+    message: "node template landing page",
   });
 });
 
