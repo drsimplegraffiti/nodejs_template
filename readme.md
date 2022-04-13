@@ -136,3 +136,7 @@ If the pipeline doesn't sync with your source code, Remove the ".ebextensions" d
 Inside Procfile, try putting the following:
 
 > web: npm start
+
+##### Second fix for codepipeline errors
+
+Just remove the Procfile and let elasticbeanstalk use the default npm start by default.
