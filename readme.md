@@ -60,10 +60,41 @@ Do you want to set up SSH for your instances?
 (Y/n): n
 ```
 
+#### Run eb init with flags
+
+> eb init --platform node.js --region us-east-2
+
+The above command creates the `.elasticbeanstalk folder`
+
+##### .ebextension
+
+Create a folder `.ebextensions`
+create a file `nodecommands.config`
+
+put your start command there
+
+```
+option_settings:
+    aws:elasticbeanstalk:container:nodejs:aws:elasticbeanstalk
+        NodeCommand: "npm start"
+```
+
 #### Create the application environment (Deployment)
 
 > eb create [environment-name]
 > The <environment-name> is the name of your application, in this example I used nodetemplate hence the command is [eb create nodetemplate]
+
+- with flags run: eb create --sample [your project folder name]
+
+Note: avoid the use of `_` when naming your project folders
+
+#### Deploy your application
+
+> eb deploy
+
+##### open your eb app
+
+> eb open
 
 #### more commands
 
@@ -81,3 +112,7 @@ eb setenv [VAR_NAME=VALUE]
   }
 
 ```
+
+##### Tp delete eb init project
+
+> o to the directory of your project (the directory where you originally ran the "eb init" command). Delete the . elasticbeanstalk directory. You can now run "eb init" again, and it will prompt you for your configuration information.

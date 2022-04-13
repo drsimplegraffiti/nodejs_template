@@ -1,15 +1,13 @@
-const config = require("config");
 const app = require("./app");
 require("dotenv").config();
 const logger = require("./logger/logger");
 
-const port = config.get("app_server.port") || 3000;
-const host = config.get("app_server.host") || "localhost";
+const port = process.env.PORT || 3456;
 
 const server = async () => {
   try {
-    app.listen(port || 3000, host, () => {
-      logger.info(`Server is running on port ${port || 3000}`);
+    app.listen(port , () => {
+      logger.info(`Server is running on port ${port}`);
     });
   } catch (error) {
     logger.error(error);
