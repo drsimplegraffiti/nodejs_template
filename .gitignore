@@ -1,5 +1,4 @@
 node_modules
-/config/local.toml
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
