@@ -75,7 +75,7 @@ put your start command there
 
 ```
 option_settings:
-    aws:elasticbeanstalk:container:nodejs:aws:elasticbeanstalk
+    aws:elasticbeanstalk:container:nodejs:
         NodeCommand: "npm start"
 ```
 
