@@ -126,3 +126,13 @@ eb setenv [VAR_NAME=VALUE] note: do not include the square brackets
 > code pipeline enables you to do continuous development and continuous integration on your AWS resources.
 
 Search codepipeline in your aws services and create a pipeline
+
+---
+
+###### fixing codepipeline errors
+
+If the pipeline doesn't sync with your source code, Remove the ".ebextensions" directory and added a file called "Procfile" to my source directory.
+
+Inside Procfile, try putting the following:
+
+> web: npm start
