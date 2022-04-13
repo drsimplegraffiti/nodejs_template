@@ -116,3 +116,7 @@ eb setenv [VAR_NAME=VALUE]
 ##### Tp delete eb init project
 
 > o to the directory of your project (the directory where you originally ran the "eb init" command). Delete the . elasticbeanstalk directory. You can now run "eb init" again, and it will prompt you for your configuration information.
+
+###### Tutorial link
+
+[deployment with node express](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_express.html)

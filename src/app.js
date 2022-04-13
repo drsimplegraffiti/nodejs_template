@@ -15,7 +15,7 @@ app.use(limiter);
 
 app.get("/", (req, res) => {
   res.status(200).json({
-    message: config.get("app_status.status_check"),
+    message: "app_status.status_check",
   });
 });
 
