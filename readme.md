@@ -120,3 +120,9 @@ eb setenv [VAR_NAME=VALUE] note: do not include the square brackets
 ###### Tutorial link
 
 [deployment with node express](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_express.html)
+
+##### Code pipeline
+
+> code pipeline enables you to do continuous development and continuous integration on your AWS resources.
+
+Search codepipeline in your aws services and create a pipeline
