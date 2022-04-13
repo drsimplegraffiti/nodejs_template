@@ -16,6 +16,7 @@
     "express": "^4.17.3",
     "express-rate-limit": "^6.3.0",
     "helmet": "^5.0.2",
+    "mongoose": "^6.2.10",
     "morgan": "^1.10.0",
     "pino": "^7.10.0",
     "pino-pretty": "^7.6.1",

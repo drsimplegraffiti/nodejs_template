@@ -101,7 +101,7 @@ Note: avoid the use of `_` when naming your project folders
 eb logs
 eb deploy
 eb --help
-eb setenv [VAR_NAME=VALUE]
+eb setenv [VAR_NAME=VALUE] note: do not include the square brackets
 
 #### Specify node version and engine
 

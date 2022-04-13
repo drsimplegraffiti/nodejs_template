@@ -4,8 +4,10 @@ const cors = require("cors");
 const helmet = require("helmet");
 const limiter = require("./ratelimit/rate.limit");
 const logger = require("./logger/logger");
-const res = require("express/lib/response");
+const connectDB = require("./db/db");
 const app = express();
+
+connectDB();
 
 app.use(cors());
 app.use(helmet());
